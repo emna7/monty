@@ -1,3 +1,4 @@
-push
-pint
-lol
+push 6
+push 8
+push 9
+pall
