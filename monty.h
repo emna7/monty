@@ -2,7 +2,7 @@
 #define __MONTY_H__
 #include <stdio.h>
 #include <stdlib.h>
-
+#define UNUSED(x) (void)(x)
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -42,4 +42,5 @@ void _pall(stack_t **head, unsigned int line_number);
 void _pint(stack_t **head, unsigned int line_number);
 void _pop(stack_t **stack, unsigned int line_number);
 void _sub(stack_t **stack, unsigned int line_number);
+void _nop(stack_t **stack, unsigned int line_number);
 #endif

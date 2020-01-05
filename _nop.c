@@ -5,7 +5,7 @@
  * @line_number: value of node
  * Return: nothing
  **/
-void nop(stack_t **stack, unsigned int line_number)
+void _nop(stack_t **stack, unsigned int line_number)
 {
 UNUSED(stack);
 UNUSED(line_number);
