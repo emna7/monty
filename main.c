@@ -8,11 +8,11 @@ void (*get_function(char *line))(stack_t **, unsigned int)
 {
   instruction_t ops[] = {
     {"pall", _pall},
-    // {"pint", _pint},
-    // {"pop", _pop},
+    {"pint", _pint},
+    {"pop", _pop},
     // {"swap", _swap},
-    // {"add", _add},
-    // {"nop", _nop},
+    {"add", _add},
+    {"nop", _nop},
     {NULL, NULL}
   };
   int i = 0;
