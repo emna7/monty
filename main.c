@@ -69,7 +69,7 @@ line_number++;
 // check if instruction is valid
 
 valid_instruction(line, push_arg);
-
+// get the appropriate function for operand
 if (strcmp(line, "push") == 0)
   _push(&stack, push_arg, line_number);
 else
@@ -77,8 +77,6 @@ else
   func = get_function(line);
   func(&stack, line_number);
 }
-
-
 
   read_line = getline(&line, &bufsize, f);
   line_number++;
