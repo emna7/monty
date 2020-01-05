@@ -2,8 +2,7 @@
 #define __MONTY_H__
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
-#include <string.h>
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -33,10 +32,8 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-int valid_instruction(char *instruction, char *operands[10]);
-char *_strcpy(char *s);
-int _strcmp(char *s1, char *s2);
-void _push(stack_t **head, int push_parameter, int line_number);
-int push_argument(char *line_cp, int line_number);
+extern int line_number;
+void valid_instruction(char *buffer, int push_arg);
 void _pall(stack_t **head, unsigned int line_number);
+void _push(stack_t **head, int push_arg, int line_number);
 #endif
