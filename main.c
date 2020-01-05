@@ -71,6 +71,7 @@ int main (int argc, char **argv)
   {
   line_copy = _strcpy(buffer);
   instruction = strtok(buffer, " ");
+
   instruction = strtok(instruction, "\n");
   if (instruction == NULL)
   {
@@ -87,7 +88,7 @@ if (_strcmp(instruction, operands[0]) == 0)
 {
 push_parameter = push_argument(line_copy, line_number);
 printf("argument to push is: %d\n", push_parameter);
-_push(&head, push_parameter);
+_push(&head, push_parameter, line_number);
 }
 else if (_strcmp(instruction, operands[1]) == 0)
 _pall(&head, line_number);
