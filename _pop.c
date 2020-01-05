@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "monty.h"
 
-void _pop(stack_t **head, unsigned int line_number)
+void _pop(stack_t **stack, unsigned int line_number)
 {
 stack_t *node;
 if (stack == NULL || *stack == NULL)
