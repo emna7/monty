@@ -2,10 +2,14 @@
 #define __MONTY_H__
 #include <stdio.h>
 #include <stdlib.h>
+<<<<<<< HEAD
 #include <unistd.h>
 #include <string.h>
 
 #define UNUSED(x) (void)(x)
+=======
+
+>>>>>>> f59dadd5b099ac731fce50896d264a7be825c0d0
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -35,6 +39,7 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+<<<<<<< HEAD
 
 int valid_instruction(char *instruction, char *operands[10]);
 char *_strcpy(char *s);
@@ -46,4 +51,10 @@ void _pop(stack_t **stack, unsigned int line_number);
 void _add(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_number);
 void _swap(stack_t **stack, unsigned int line_number);
+=======
+extern int line_number;
+void valid_instruction(char *buffer, int push_arg);
+void _pall(stack_t **head, unsigned int line_number);
+void _push(stack_t **head, int push_arg, int line_number);
+>>>>>>> f59dadd5b099ac731fce50896d264a7be825c0d0
 #endif
