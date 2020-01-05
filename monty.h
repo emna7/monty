@@ -39,4 +39,5 @@ int _strcmp(char *s1, char *s2);
 void _push(stack_t **head, int push_parameter, int line_number);
 int push_argument(char *line_cp, int line_number);
 void _pall(stack_t **head, unsigned int line_number);
+void _pop(stack_t **head, unsigned int line_number);
 #endif
