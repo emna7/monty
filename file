@@ -1,4 +1,10 @@
+<<<<<<< HEAD
            push 6
 push 8
 push 9
 pall
+=======
+push 3
+push 6
+push 1
+>>>>>>> 1d6e6c0715f2eeace52255f94506c65b9c910ac5
