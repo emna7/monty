@@ -36,4 +36,10 @@ extern int line_number;
 void valid_instruction(char *buffer, int push_arg);
 void _pall(stack_t **head, unsigned int line_number);
 void _push(stack_t **head, int push_arg, int line_number);
+void _add(stack_t **stack, unsigned int line_number);
+void _mul(stack_t **stack, unsigned int line_number);
+void _pall(stack_t **head, unsigned int line_number);
+void _pint(stack_t **head, unsigned int line_number);
+void _pop(stack_t **stack, unsigned int line_number);
+void _sub(stack_t **stack, unsigned int line_number);
 #endif
